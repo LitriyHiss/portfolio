@@ -10,6 +10,52 @@
   font-family: sans-serif;
 }
 
+.whrapper{
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+.header{
+  margin-top: 0.8em;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  height: 40px;
+  align-items: center;
+}
+
+.header__account{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 32px 64px 16px 1fr;
+  column-gap: 1em;
+  position: relative;
+}
+
+input{
+  padding:4px 10px;
+  border:0;
+  font-size:16px;
+}
+.search__line{
+  width: 645px;
+  height: 40px;
+  color: #808191;
+  background-color: #353440;
+  border-radius: 10px;
+  font-size: 0.75rem;
+}
+
+.header__search{
+  position: relative;
+}
+
+.search__ico{
+  position: absolute;
+  top: 13px;
+  left: 616px;
+}
+
 .sidebar{
   width: 240px;
   height: 100dvh;
@@ -21,6 +67,26 @@
   font-size: 1.25rem;
   padding-top: 1em;
   color: white;
+}
+
+.button{
+  outline: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.account__notification{
+  position: relative;
+  position: absolute;
+  top: 0.5em;
+  left: 13em;
+}
+
+.notification__elypse{
+  position: absolute;
+  top: -4px;
+  left: 10px;
 }
 
 .sidebar__list{
