@@ -69,11 +69,29 @@ input{
   color: white;
 }
 
+.sidebar__marker{
+  padding-right: 1em;
+}
+
 .button{
   outline: none;
   background: transparent;
   border: 0;
   cursor: pointer;
+}
+
+.sidebar__button{
+  outline: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #808191;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  white-space: nowrap;
 }
 
 .account__notification{
@@ -93,6 +111,7 @@ input{
   font-weight: 700;
   font-size: 0.875rem;
   margin-top: 1em;
+  color: #808191;
 }
 
 .sidebar__titleList{
