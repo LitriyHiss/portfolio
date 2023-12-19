@@ -4,19 +4,30 @@
   margin: 0;
 }
 
+body{
+  transition: .4s;
+}
+
 @font-face {
   font-family: "poppins";
   src: url("./font/Poppins-Regular.ttf");
 }
 
 :root{
-  --bg-color-a: #0DAABC;
-  --bg-color-b: (90deg, #0DAABC 66.47%, rgba(13, 170, 188, 0.00) 100%);
+  --bg-color-a: rgb(255, 255, 255);
+  --bg-color-b: #dfdfdf;
+  --color-a: black;
+}
+
+.dark{
+  --bg-color-a: #1F1D2B;
+  --bg-color-b: #353440;
+  --color-a: white;
 }
 
 .page{
-  background-color: #1F1D2B;
-  color: white;
+  background-color: var(--bg-color-a);
+  color: var(--color-a);
   font-family: "poppins";
 }
 
@@ -53,7 +64,7 @@ input{
   width: 645px;
   height: 40px;
   color: #808191;
-  background-color: #353440;
+  background-color: var(--bg-color-b);
   border-radius: 10px;
   font-size: 0.75rem;
 }
@@ -80,7 +91,7 @@ input{
 .sidebar__title{
   font-size: 1.25rem;
   padding-top: 1em;
-  color: white;
+  color: var(--color-a);
 }
 
 .sidebar__marker{
@@ -185,10 +196,6 @@ input:checked + .slider {
   background-color: #6C5ECF;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #6C5ECF;
-}
-
 input:checked + .slider:before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
@@ -235,10 +242,6 @@ input:checked + .slider:before {
 
 .cardRight{
   width: 352px;
-}
-
-.color__a{
-  background-color: var(--bg-color-a);
 }
 
 .discover__img1{
