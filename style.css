@@ -33,12 +33,12 @@ body{
 }
 
 .burger{
-  width: 40px;
+  width: 50px;
   height: 40px;
   display: none;
   position: absolute;
   top: 36px;
-  left: 36px;
+  left: 24px;
 }
 
 .whrapper{
@@ -69,14 +69,11 @@ body{
 
 .overlay{
   display: none;
-  width: calc(100% - 240px);
-  height: 100vh;
-  padding-inline: 60px;
-  padding-top: 20px;
-  padding-bottom: 60px;
-  margin-inline: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
   position: absolute;
-  left: 240px;
+  position: fixed;
   z-index: 2;
 }
 
@@ -121,6 +118,7 @@ input{
   background-color: var(--bg-color-a);
   transition: .4s;
   z-index: 3;
+  position: fixed;
 }
 
 .sidebar__title{

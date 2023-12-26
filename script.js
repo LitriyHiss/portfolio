@@ -13,7 +13,8 @@ function menuOpen(){
   sidebar.style.width = "240px";
   burger.style.display = "none";
   page.style.display = "block";
-  sidebar.style.position = "absolute"
+  page.style.backgroundColor = "#00000050"
+  sidebar.style.position = "absolute fixed"
 }
 
 function menuLock(){
