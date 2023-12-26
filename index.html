@@ -9,32 +9,42 @@
   <script src="script.js" defer></script>
 </head>
 <body class="page">
-  <div class="whrapper">
-    <div class="sidebar">
-      <h1 class="sidebar__title">skateboard</h1>
-      <h2 class="sidebar__titleList">menu</h2>
-      <ul class="sidebar__list">
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/red-home.svg" alt="">Discover</button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/row.svg" alt="">Trending</button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/stream.svg" alt="">Streaming</button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/playlist.svg" alt="">Playlist</button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/bookmark.svg" alt="">Bookmark</button></li>
-      </ul>
-      <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
-      <h2 class="sidebar__titleList">category</h2>
-      <ul class="sidebar__list">
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/home.svg" alt=""><p>Live stream</p></button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/row.svg" alt="">Tutorial</button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/stream.svg" alt="">Competition</button></li>
-        <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/playlist.svg" alt="">Community</button></li>
-      </ul>
-      <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
-      <label class="sidebar__switch">
-        <input type="checkbox" id="slider">
-        <span class="slider round"></span>
-      </label>
-    </div>
+  <div class="sidebar" id="sidebar">
+    <h1 class="sidebar__title">skateboard</h1>
+    <h2 class="sidebar__titleList">menu</h2>
+    <ul class="sidebar__list">
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/red-home.svg" alt="">Discover</button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/row.svg" alt="">Trending</button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/stream.svg" alt="">Streaming</button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/playlist.svg" alt="">Playlist</button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/bookmark.svg" alt="">Bookmark</button></li>
+    </ul>
+    <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
+    <h2 class="sidebar__titleList">category</h2>
+    <ul class="sidebar__list">
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/home.svg" alt=""><p>Live stream</p></button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/row.svg" alt="">Tutorial</button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/stream.svg" alt="">Competition</button></li>
+      <li><button type="button" class="sidebar__button"><img class="sidebar__marker" src="./img/playlist.svg" alt="">Community</button></li>
+    </ul>
+    <img class="sidebar__line" src="./img/Line 1.svg" alt="line">
+    <label class="sidebar__switch">
+      <input type="checkbox" id="slider">
+      <span class="slider round"></span>
+    </label>
+  </div>
 
+  <div class="overlay button" id="page">
+
+  </div>
+
+  <div class="whrapper">
+    <div class="overlay button" id="page">
+
+    </div>
+    <button class="burger button" id="burger">
+      <img src="./img/menu.svg" alt="">
+    </button>
     <div class="header">
       <form class="header__search">
         <input type="text" class="search__line" placeholder="Search">
